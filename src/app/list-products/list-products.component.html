@@ -1,0 +1,13 @@
+<div class="card">
+    <img [src]="itemImage" alt="Item Image" class="item-image" />
+    <h2>{{ itemName }}</h2>
+  
+    <div class="counter-group">
+      <button (click)="decrement()">-</button>
+      <input type="text" [value]="count" readonly />
+      <button (click)="increment()">+</button>
+    </div>
+  
+    <button class="reset-button" (click)="reset()">Reset</button>
+  </div>
+  

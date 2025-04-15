@@ -7,5 +7,14 @@ import { Component } from '@angular/core';
   styleUrl: './login.component.css'
 })
 export class LoginComponent {
-
+  login() {
+    console.log('Login button clicked');
+    this.authenticationSuccess();
+  }
+  authenticationSuccess() {
+    console.log('Authentication successful');
+  }
+  authenticationFailure() {
+    console.log('Authentication failed');
+  }
 }

@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './signup.component.css'
 })
 export class SignupComponent {
-
+  signup() {
+    console.log('Signup button clicked');
+  }
 }
